@@ -1,0 +1,13 @@
+.title {
+  font-size: 3.75rem;
+  font-weight: 600;
+}
+
+@media (max-width: 420px) {
+  .title {
+    font-size: 2rem;
+  }
+  .githubName {
+    width: 6rem;
+  }
+}
