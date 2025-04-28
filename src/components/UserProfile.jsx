@@ -11,7 +11,9 @@ const UserProfile = ({ userData, error, fetchCompleted }) => {
                 <img src={userData.avatar_url} alt="User image" />
               </div>
               <div className={styles.userInfo}>
-                <p className={styles.userName}>{userData.name}</p>
+                <a href={userData.html_url} target="_blank">
+                  <p className={styles.userName}>{userData.name}</p>
+                </a>
                 <p className={styles.userBio}>{userData.bio}</p>
               </div>
             </div>
